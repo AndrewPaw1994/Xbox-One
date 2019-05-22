@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed|Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="wrapper">
+      <a class="logo" href="#home">microsoft</a>      
+      <nav class="nav header__nav">
+        <span class="menu-label-stick"></span>
+        <label for="menu" class="menu-label">shop</label>
+        <span class="menu-label-stick"></span>
+        <input id="menu" class="menu-input" type="checkbox">
+        <ul class="nav-list">
+          <li class="nav-list__item">
+            <a class="nav-list__link link" href="#">devices</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link link" href="#">software</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link link" href="#">Games & Entertainment</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link link" href="#">giftcards</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link link" href="#">Education & Business</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__aside">
+        <div class="header__search search">
+          <label for="search" class="search__icon"></label>
+          <input id="search" class="search__input" placeholder="I’m looking for…" type="text">
+        </div>
+        <a href="#login" class="link header__aside-link">Sign in</a>
+        <a href="#basket" class="basket-button">go to basket</a>
+      </div>
+    </div>
+  </header>
+  <main class="content">
+    <div class="content-wrapper">
+      <section class="product">
+        <div class="preview">
+          <ul class="preview__list">
+            <li class="preview__item preview__item_active">
+              <a class="preview__item-link">
+                <img class="preview__item-image" src="./images/xbox-one.jpg" alt="small preview xbox one">
+              </a>
+            </li>
+            <li class="preview__item">
+              <a class="preview__item-link">
+                <img class="preview__item-image" src="./images/xbox-one-back.jpg" alt="small preview xbox one">
+              </a>
+            </li>
+            <li class="preview__item">
+              <a class="preview__item-link">
+                <img class="preview__item-image" src="./images/xbox-one-side.jpg" alt="small preview xbox one">
+              </a>
+            </li>
+          </ul>
+          <div class="preview__product-wrapper">
+            <img class="preview__product" src="./images/xbox-one.jpg" alt="photo xbox one">
+          </div>
+        </div>
+        <div class="product__info">
+          <header class="product__info-header">
+            <span class="label">on sale</span>
+            <h1 class="title product__title">Xbox One Wireless Controller</h1>
+            <p class="product__subheading">Accessories</p>
+            <div class="product__metadata">
+              <div class="price">
+                <span class="price__value">$39.99</span>
+                <s class="price__value price__value_previous">$59.99</s>
+              </div>
+              <div class="rating">
+                <ul class="rating__list">
+                  <li class="rating__item rating__item_selected">★</li>
+                  <li class="rating__item rating__item_selected">★</li>
+                  <li class="rating__item rating__item_selected">★</li>
+                  <li class="rating__item rating__item_selected">★</li>
+                  <li class="rating__item">★</li>
+                </ul>
+                <span class="rating__amount">(50)</span>
+              </div>
+            </div>
+            <form class="product__form">
+                <div class="radio-buttons">
+                  <label class="radio-button radio-buttons__button">
+                    <input type="radio" name="color" class="radio-input radio-input__white radio-button__input" checked></input>
+                    <span class="radio-text radio-button__text">White</span>  
+                  </label>
+                  <label class="radio-button radio-buttons__button">
+                    <input type="radio" name="color" class="radio-input radio-input__black radio-button__input"> </input>
+                    <span class="radio-text radio-button__text">Black</span>  
+                  </label>
+                  <label class="radio-button radio-buttons__button">
+                    <input type="radio" name="color" class="radio-input radio-input__green radio-button__input"> </input>
+                    <span class="radio-text radio-button__text">Green</span>  
+                  </label>
+                </div>
+              <select class="product__form__quantity">
+                    <option>Quantity (1)</option>
+                    <option>Quantity (2)</option>
+                    <option>Quantity (3)</option>
+                    <option>Quantity (4)</option>
+                    <option>Quantity (5)</option>
+              </select>
+              <button class="button button_primary button_big product__form-button">
+                <span class="product__form-button-text">add to cart</span>
+              </button>
+              <p class="product__form-text">Free shipping on orders over $30</p>
+              <button class="button button_big product__form-button">
+                  <span class="product__form-button-text2">Find In Store</span>
+                </button>
+                <p class="product__form-text">Compatible with Xbox One, Xbox One S, and Xbox One X consoles.</p>
+            </form>
+          </header>
+        </div>
+      </section>
+    </div>
+    <section class="recommended">
+      <p class="recommended-name">Complete your experience</p>
+    <ul class="recommended-list">
+      <li class="recommended__item">
+        <a href="" class="recommended__item-link">
+          <img class="recommended__item-image" src="./images/charger.jpg" alt="Preview Xbox Charger">
+          <h2 class="recommended__item-name">Xbox One Play & Charge Kit</h2>
+        </a>
+        <button class="button button_primary button_small">
+          <span class="recommended__item-price">$19.99</span>
+        </button>
+      </li>
+      <li class="recommended__item">
+        <a href="" class="recommended__item-link">
+          <img class="recommended__item-image"  src="./images/adapter.jpg" alt="Preview Xbox Adapter">
+          <h2 class="recommended__item-name">Xbox Wireless Adapter for<br>Windows</h2>
+        </a>
+        <button class="button button_primary button_small">
+          <span class="recommended__item-price">$24.99</span>
+        </button>
+      </li>
+      <li class="recommended__item">
+        <a href="" class="recommended__item-link">
+          <img class="recommended__item-image"  src="./images/remote.jpg" alt="Preview Xbox Remote">
+          <h2 class="recommended__item-name">Xbox One Media Remote</h2>
+        </a>
+        <button class="button button_primary button_small">
+          <span class="recommended__item-price">$24.99</span>
+        </button>
+      </li>
+      <li class="recommended__item">
+        <a href="" class="recommended__item-link">
+          <img class="recommended__item-image"  src="./images/chatpad.jpg" alt="Preview Xbox Chatpad">
+          <h2 class="recommended__item-name">Xbox Chatpad</h2>
+        </a>
+        <button class="button button_primary button_small">
+          <span class="recommended__item-price">$34.99</span>
+        </button>
+      </li>
+    </ul>
+    </section>
+  </main>
+  <footer class="footer">
+  </footer>
+</body>
+</html>
